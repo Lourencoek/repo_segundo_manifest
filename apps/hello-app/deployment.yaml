@@ -4,7 +4,7 @@ kind: Deployment
 
 metadata:
 
-name: hello-app
+name: estagi-app
 
 namespace: hello-app
 
@@ -16,7 +16,7 @@ selector:
 
 matchLabels:
 
-  app: hello-app
+  app: estagi-app
 
 template:
 
@@ -24,7 +24,7 @@ metadata:
 
   labels:
 
-    app: hello-app
+    app: estagi-app
 
 spec:
 
@@ -32,7 +32,7 @@ spec:
 
   - name: hello-app
 
-    image: Sairup/hello-app:PLACEHOLDER_TAG
+    image: Sairup/estagi-app:PLACEHOLDER_TAG
 
     ports:
 
