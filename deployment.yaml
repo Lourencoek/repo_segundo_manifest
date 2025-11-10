@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+
+kind: Deployment
+
+metadata:
+
+name: estagi-app
+
+namespace: hello-app
+
+spec:
+
+replicas: 1
+
+selector:
+
+matchLabels:
+
+  app: estagi-app
+
+template:
+
+metadata:
+
+  labels:
+
+    app: estagi-app
+
+spec:
+
+  containers:
+
+  - name: hello-app
+
+    image: Sairup/estagi-app:PLACEHOLDER_TAG
+
+    ports:
+
+    - containerPort: 80</p>
